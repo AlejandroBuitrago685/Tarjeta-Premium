@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oorum Premium Card</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/styleindex.css">
+  <link rel="icon" type="image/png" href="img/logo.png" sizes="16x16">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/qrcode.js"></script>
+
+<!--Script hacer aparecer y desaparecer cookies y aviso legal-->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    setTimeout(function() {
+        $(".footer").fadeIn(500);
+    },2700);
+});
+
+$(document).ready(function() {
+    setTimeout(function() {
+        $(".site-cookies").fadeIn(1500);
+    },4000);
+});
+
+$(document).ready(function() {
+    setTimeout(function() {
+        $(".site-cookies").fadeOut(1500);
+    },15000);
+});
+</script>
+
+</head>
+<body>
+
+<aside class="profile-card">
+  <header>
+    <!-- Foto -->
+    <a>
+      <img src="img/perfil-javierjuarez.jpg" class="hoverZoomLink">
+    </a>
+
+    <!-- Nombre -->
+    <h1>
+            Javier Juárez
+          </h1>
+
+    <!-- cargo -->
+    <h2>
+            CEO & Fundador
+          </h2>
+
+  </header>
+
+  <!-- biografía -->
+  <div class="profile-bio">
+
+    <p>
+      Emprendedor, asesor financiero, experto en ventas internacionales, conector internacional, mandatario de activos inmobiliarios, asesora a inventores y creador/desarrollador de modelos de negocio.
+    </p>
+
+  </div>
+
+  <!-- aocial links -->
+  <ul class="profile-social-links">
+    <li>
+      <a target="_blank" href="https://www.facebook.com/oorumglobal">
+        <img src="img/facebook.png">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://twitter.com/Ooorumglobal">
+        <img src="img/twitter.png">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://www.linkedin.com/in/javier-juarez-7a0270190/">
+        <img src="img/linkedin.png">
+        <i class="fa fa-github"></i>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=34633521238">
+       <img src="img/whatsapp.png">
+        <i class="fa fa-behance"></i>
+      </a>
+    </li>
+  </ul>
+  <div class="botones">
+    <a target="_blank" class="boton_unete" href="https://oorum.com/broker/unete">Únete</a>
+    <a class="boton_personalizado" href="#popup">Encuéntrame</a>
+    <div id="popup" class="overlay">
+            <div id="popupBody">
+              <img class="logo_encuentranos" src="img/logo.png">
+                <h2><strong>¡Encuéntranos!</strong></h2>
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <p>🏟️ Avenida de Europa, 19-3A , La Moraleja 28108 Alcobendas (Madrid-España).
+                      Otras oficinas: proximamente en Canarias.</p><br>
+                    <p>📞 +34 633 521 238</p><br>
+                    <p>📩 info@oorum.com</p><br>
+                    <p>⌚ Lunes a Viernes de 9:00 a 21:00 horas</p>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12132.812716891067!2d-3.6561109999999997!3d40.515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba2b9327f3c09cfc!2sCOMIC%20LA%20MORALEJA!5e0!3m2!1ses!2ses!4v1597788231174!5m2!1ses!2ses" width="350" height="180" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    <a class="boton_servicios" href="Servicios.html">Servicios</a>
+    <br><br><br>
+    <a class="boton_oorum" href="#popupoorum">Oorum</a>
+    <div id="popupoorum" class="overlayoorum">
+            <div id="popupBodyoorum">
+              <img class="logo_oorum" src="img/logo.png">
+                <h2><strong>Oourm</strong></h2>
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <p class="texto_oorum1">Tú Plataforma Colaborativa y Gestor de Confianza de Salud Financiera.</p>
+                    <br>
+                    <p texto_oorum2>Oorum cuenta con un Equipo Interno de profesionales con años de experiencia preparado para ofrecer el mejor servicio a los usuarios.</p>
+                    <br><br>
+                    <a target="_blank" class="boton_web" href="https://oorum.com">Web</a><br>
+                    <iframe src="https://player.vimeo.com/video/445041419" width="auto" height="200px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+  <a class="boton_qr" href="#popupqr">Generador QR</a>
+    <div id="popupqr" class="overlayqr">
+            <div id="popupBodyqr">
+              <img class="logo_oorum" src="img/logo.png">
+                <h2><strong>Generador QR</strong></h2>
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                  <div class="block">
+      <input id="text" type="text" value="Oorum Premium Card" /><br />
+      <div id="qrcode" style="width:100px; height:100px; margin-top:35px;"></div>
+    </div>
+
+    <script type="text/javascript">
+    // Genera el objeto qrcode
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+      width : 100,
+      height : 100
+    });
+
+    // Funcion para crear el codigo
+    function makeCode () {
+      var elText = document.getElementById("text");
+
+      if (!elText.value) {
+        alert("Debes ingresar un texto, actualiza la página");
+        elText.focus();
+        return;
+      }
+
+      qrcode.makeCode(elText.value);
+    }
+
+    // Al cargar crear el qr inicial
+    makeCode();
+
+    // Al pulsar teclar Enter, genera en QR
+    $("#text").
+      on("blur", function () {
+        makeCode();
+      }).
+      on("keydown", function (e) {
+        if (e.keyCode == 13) {
+          makeCode();
+        }
+      });
+    </script>
+                </div>
+            </div>
+        </div>
+  </div>
+  
+</aside>
+
+<div class="footer">
+ <a class="derechos">Todos los derechos reservados © | Oorum ®</a><br>
+ <a class="Aviso_Legal" href="Aviso_Legal.html">Aviso legal</a>
+</div>
+  <!-- Aviso de cookies -->
+<div class="site-cookies">
+  <p>Utilizamos cookies para mejorar su experiencia en nuestro sitio web y adaptar el contenido para que sea más útil y accesible. Para obtener más información, consulte nuestra <a target="_blank" href="Aviso_Legal.html">política de cookies y aviso legal</a>.</p>
+</div>
+
+
+</body>
+</html>
